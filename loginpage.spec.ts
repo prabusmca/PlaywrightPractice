@@ -17,4 +17,7 @@ test('Test Login Page', async ({ page }) => {
     console.log('Login failed or content is not visible');
   }
   
+  console.log (isGreetingVisible);
+  console.log (isContentVisible);
+
 });
