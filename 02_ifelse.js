@@ -78,7 +78,7 @@ else{
 
 */
 
-let Browser ="Edge";
+let Browser ="Tommy";
 if(Browser =="Chrome"){
     console.log("You are using Chrome browser");
 }
