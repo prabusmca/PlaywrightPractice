@@ -1,4 +1,4 @@
-import{test,expect}from'@playwright/test';
+import { test, expect } from '@playwright/test';
 test('Vist Point Mortgage - UAT',async({page})=>{
 await page.setViewportSize({ width: 1920, height: 1080 });
 await page.goto('https://uat.vistapointmortgage.com/');
