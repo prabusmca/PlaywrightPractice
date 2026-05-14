@@ -1,0 +1,36 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://vplms-uat-web.azurewebsites.net/');
+  await page.getByRole('button', { name: 'Sign in' }).click();
+  await page.getByRole('button', { name: 'Toggle theme' }).click();
+  await page.getByLabel('Lock Desk', { exact: true }).click();
+  await page.getByRole('link', { name: 'Add Loan' }).click();
+  await page.getByRole('button', { name: 'Select Loan Program' }).click();
+  await page.getByRole('cell', { name: 'Conforming Fannie 15yr FRM', exact: true }).click();
+  await page.getByRole('button', { name: 'Select Client' }).click();
+  await page.getByRole('cell', { name: 'Royal Pacific Funding' }).click();
+  await page.getByRole('button', { name: 'Select Commitment ID' }).click();
+  await page.getByRole('cell', { name: 'FW_20251001' }).click();
+  await page.getByRole('textbox', { name: 'First Name *' }).click();
+  await page.getByRole('textbox', { name: 'First Name *' }).press('CapsLock');
+  await page.getByRole('textbox', { name: 'First Name *' }).fill('T');
+  await page.getByRole('textbox', { name: 'First Name *' }).press('CapsLock');
+  await page.getByRole('textbox', { name: 'First Name *' }).fill('Test');
+  await page.getByRole('textbox', { name: 'First Name *' }).click();
+  await page.getByRole('textbox', { name: 'First Name *' }).fill('Test2t');
+  await page.getByRole('textbox', { name: 'Last Name *' }).click();
+  await page.getByRole('textbox', { name: 'Last Name *' }).fill('est');
+  await page.getByRole('textbox', { name: 'Street Address *' }).click();
+  await page.getByRole('textbox', { name: 'Street Address *' }).fill('street');
+  await page.getByRole('textbox', { name: 'City *' }).click();
+  await page.getByRole('textbox', { name: 'City *' }).fill('test city');
+  await page.getByText('Select...▼').click();
+  await page.getByText('Arkansas').click();
+  await page.getByText('Alabama').click();
+  await page.getByRole('textbox', { name: 'Zip Code *' }).fill('741852');
+  await page.getByText('Alabama').click();
+  await page.getByRole('button', { name: 'Save' }).click();
+  await page.getByRole('textbox', { name: 'Zip Code *' }).fill('74185');
+  await page.getByRole('button', { name: 'Save' }).click();
+});

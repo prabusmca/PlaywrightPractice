@@ -83,6 +83,10 @@ const bannerTexts = [
     { text: 'Suite of Non-QM & DSCR Products', exact: true },
     { text: 'Equity Solutions: Closed-End Seconds', exact: true },
     { text: 'Closed-End Second is a second lien that can be a standalone or piggyback transaction. It is designed to go behind low-interest rate non-QM, QM and non-owner-occupied 1st mortgages.', exact: true },
+    { text: 'Investment Properties', exact: true },
+    { text: 'Is designed for non-owner or investment property borrowers that may or may not have had previous investor experience. This program offers expanded credit parameters for multiple non-owner borrower profiles while utilizing multiple document types to further address specific income circumstances in the demonstration of ability to repay.', exact: true },
+    { text: 'Primary & Secondary Homes', exact: true },
+    { text: 'Is designed for owner-occupied and second home borrowers who require flexibility in mortgage history, credit history, and/or payment and documentation options. This program offers expanded credit parameters for multiple borrower profiles while utilizing multiple document types to further address specific income circumstances in the demonstration of ability to repay.', exact: true },
   
   ];
 
